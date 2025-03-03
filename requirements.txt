@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+SQLAlchemy
+asyncpg
+psycopg2-binary
+aioredis
+aio_pika
+alembic
+pydantic
+pytest
+aiomonitor
