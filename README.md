@@ -24,30 +24,6 @@
 - Alembic (миграции БД PostgreSQL)
 - Docker и Docker Compose (развёртывание контейнеров)
 
-## Структура проекта
-
-Предположим, у вас такая структура:
-
-- app/  
-  ├─ main.py (точка входа в FastAPI-приложение)  
-  ├─ models.py (SQLAlchemy-модели)  
-  ├─ routers/ (маршруты/эндпоинты FastAPI)  
-  ├─ crud.py (операции с БД)  
-  ├─ schemas.py (Pydantic-схемы)  
-  ├─ worker.py (асинхронный потребитель задач, если реализовано кастомно)  
-  └─ ...  
-
-- alembic/  
-  ├─ env.py  
-  ├─ script.py.mako  
-  └─ versions/ (сюда складываются автогенерируемые миграции)
-
-- requirements.txt  (зависимости проекта)  
-- docker-compose.yml  
-- Dockerfile  
-- alembic.ini  
-- README.md  
-
 ## Установка и запуск
 
 ### Предварительные требования
